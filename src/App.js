@@ -5,7 +5,7 @@ import cardData from "./data.json"
 import uuid from "uuid"
 import { Card } from "./Card"
 import AddButton from "./AddButton"
-import { Summary } from "./Summary"
+import Summary from "./Summary"
 import { AddModal } from "./AddModal"
 
 function positionCards(cards, width, height) {
