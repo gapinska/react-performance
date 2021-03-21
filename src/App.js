@@ -59,8 +59,9 @@ function App() {
   }, [height, width])
 
   function handleDelete(card) {
-    delete cards[card.id]
-    setCards({ ...cards })
+    const clonedCards = { ...cards }
+    delete clonedCards[card.id]
+    setCards(clonedCards)
   }
 
   const cardEls = Object.values(cards).map((card) => (
